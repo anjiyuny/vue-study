@@ -131,3 +131,18 @@
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
+
+
+
+#### ☝️ 다른 방법도 있다
+
+```markup
+<div v-for="(a,i) in products" :key="i">
+  <h4>{{products[i]}}</h4>
+  <p>50만원</p>
+</div>
+```
+
+i가 (반복 횟수를 알려주는 숫자) 라고 했으니까 저렇게 쓰게되면
+
+\{{products\[0]\}}, \{{products\[1]\}}, \{{products\[2]\}} 가 되는것이므로 결과적으로 같은 답이 나오게 된다.
