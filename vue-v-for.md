@@ -16,8 +16,6 @@
 
 
 
-
-
 ### 🙂v-for HTML 반복문
 
 
@@ -33,7 +31,7 @@
 
 <div align="left">
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Home이 3번 반복되는 모습</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>Home이 3번 반복되는 모습</p></figcaption></figure>
 
 </div>
 
@@ -61,7 +59,7 @@
 
 <div align="left">
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>배열 안에 텍스트가 차례로 나온 화면</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption><p>배열 안에 텍스트가 차례로 나온 화면</p></figcaption></figure>
 
 </div>
 
@@ -82,3 +80,54 @@
 둘째 작명한건 0, 1, 2 .. 이런 식으로 1씩 증가하는 정수가 됩니다.
 
 반복 횟수를 알려주는 숫자라고  생각하면 된다.
+
+
+
+
+
+### ✍️ 숙제
+
+아래의 레이아웃을 v-for 반복문으로 축약하기
+
+```markup
+<div>
+  <h4> {{products[0]}} </h4>
+  <p>50 만원</p>
+</div>
+
+<div>
+  <h4> {{products[1]}} </h4>
+  <p>60 만원</p>
+</div>
+
+<div>
+  <h4> {{products[2]}} </h4>
+  <p>70 만원</p>
+</div>
+```
+
+
+
+#### ☝️풀이
+
+```markup
+ <div v-for="a in products" :key="a">
+    <h4>{{a}}</h4>
+    <p>{{price1}} 만원</p>
+  </div>
+```
+
+```javascript
+ data(){
+    return{
+      메뉴들 : ['Home', 'Shop', 'About'],
+      products : ['역삼동원룸', '천호동원룸', '마포구원룸']
+    }
+  }
+```
+
+<div align="left">
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+</div>
