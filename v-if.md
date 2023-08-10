@@ -98,4 +98,27 @@ HTML 태그 안에 <mark style="background-color:red;">**v-if="조건식"**</mar
 
 
 
-숙\[제]]
+### ✍️숙제
+
+버튼을 만들어 모달창 닫기 기능 구현하기
+
+```markup
+<!-- 모달창 -->
+  <div class="black-bg" v-if="openMd == true" >
+    <div class="white-bg">
+      <h4>상세페이지</h4>
+      <p>상세페이지 내용</p>
+      <button @click="openMd = false">닫기</button>
+    </div>
+  </div>
+```
+
+button을 클릭했을때 opneMd를  false로 만들어 주는 기능을 추가해줬다.
+
+
+
+<div align="left">
+
+<figure><img src=".gitbook/assets/ezgif.com-crop.gif" alt=""><figcaption></figcaption></figure>
+
+</div>
