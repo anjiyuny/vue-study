@@ -52,6 +52,16 @@ import { apple, apple2 } from './oneroom.js파일경로'
 </div>
 ```
 
+혹은
+
+```markup
+<div v-for="(a,i) in 원룸들" :key="(a,i)">
+    <img :src="a.image" class="room-img">
+    <h4> {{a.title}} </h4>
+    <p>{{a.price}} 원</p>
+</div>
+```
+
 ````javascript
 
 import data from './assets/oneroom';  // 저장된 data라는 이름의 데이터 가져오기
