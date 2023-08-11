@@ -7,3 +7,4 @@
 * [😅 export default / import](export-default-import.md)
 * [😀 상세페이지와 v-else](v-else.md)
 * [👩💻 Component](component.md)
+* [😋 Props](props.md)
